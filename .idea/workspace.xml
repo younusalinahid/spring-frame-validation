@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e356d044-d58a-415e-90e0-3a777109a3a1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javatechie/advice/ApplicationExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/javatechie/exception/UserNotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javatechie/advice/ApplicationExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javatechie/advice/ApplicationExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/javatechie/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javatechie/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/javatechie/dto/UserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javatechie/dto/UserRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javatechie/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javatechie/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

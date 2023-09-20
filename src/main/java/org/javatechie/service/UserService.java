@@ -2,6 +2,7 @@ package org.javatechie.service;
 
 import org.javatechie.dto.UserRequest;
 import org.javatechie.entity.User;
+import org.javatechie.exception.UserNotFoundException;
 import org.javatechie.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -25,7 +26,12 @@ public class UserService {
         return repository.findAll();
     }
 
-    public User getUser(int id) {
-        return repository.findByUserId(id);
+    public User getUser(int id) throws UserNotFoundException {
+        User user = repository.findByUserId(id);
+        if (user != null) {
+            return user;
+        } else {
+            throw new UserNotFoundException("user not found with id : "+id);
+        }
     }
 }

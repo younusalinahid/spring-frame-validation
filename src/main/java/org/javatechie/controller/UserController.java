@@ -2,6 +2,7 @@ package org.javatechie.controller;
 
 import org.javatechie.dto.UserRequest;
 import org.javatechie.entity.User;
+import org.javatechie.exception.UserNotFoundException;
 import org.javatechie.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -29,7 +30,7 @@ public class UserController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<User> getUser(@PathVariable int id) {
+    public ResponseEntity<User> getUser(@PathVariable int id) throws UserNotFoundException {
         return ResponseEntity.ok(service.getUser(id));
     }
 
